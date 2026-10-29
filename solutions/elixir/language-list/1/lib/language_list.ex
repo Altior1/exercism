@@ -1,0 +1,25 @@
+defmodule LanguageList do
+  def new() do
+    []
+  end
+
+  def add(list, language) do
+    [language | list]
+  end
+
+  def remove([hd | tail]) do
+    tail
+  end
+
+  def first([hd | _tail]) do
+    hd
+  end
+
+  def count(list) do
+    length(list)
+  end
+
+  def functional_list?(list) do
+    "Elixir" in list
+  end
+end
